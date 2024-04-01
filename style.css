@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#left {
+    font-size: 80px;
+}
+
+#right {
+    font-size: 80px;
+}
