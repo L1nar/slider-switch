@@ -9,19 +9,72 @@ html {
 
 body {
     margin: 0;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    background-color: rgb(161, 161, 161);
 }
 
 a {
     text-decoration: none;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indicators {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 10px;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 128, 0, 0.486);
+    border-radius: 50%;
+}
+
+.indicator.active {
+    background-color: rgb(0, 128, 0);
+}
+
+#img {
+    border-radius: 30px;
+    border: 2px solid green;
+}
+
 #left {
     font-size: 80px;
+    color: rgb(116, 116, 116);
 }
 
 #right {
     font-size: 80px;
+    color: rgb(116, 116, 116);
+}
+
+#right:hover {
+    color: rgb(39, 39, 39);
+    transition: 0.5s;
+}
+
+#left:hover {
+    color: rgb(39, 39, 39);
+    transition: 0.5s;
+}
+
+#left:active {
+    transition: 0.2s;
+    color: green;
+}
+
+#right:active {
+    transition: 0.2s;
+    color: green;
 }
